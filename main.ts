@@ -39,7 +39,7 @@ input.onPinPressed(TouchPin.P0, function () {
     basic.showNumber(count_medium)
     basic.showString("Tall person:")
     basic.showNumber(count_tall)
-    basic.showString("Average:")
+    basic.showString("Average height:")
     basic.showNumber(height_sum / 50)
     basic.clearScreen()
 })
@@ -110,7 +110,7 @@ basic.forever(function () {
         led.plot(random_x, random_y)
         basic.pause(300)
         if (random_x == random_y) {
-            music.playMelody("C5 B A G F E D C ", 120)
+            music.playMelody("F G A G F E F G ", 120)
         } else {
             music.playTone(262, music.beat(BeatFraction.Whole))
         }
